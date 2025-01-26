@@ -181,9 +181,11 @@ function CodeEditor() {
                             wrappingIndent: "indent",
                         }}
                     />
+
                 </div>
             </ResizablePanel>
         </ResizablePanelGroup>
     );
+
 }
 export default CodeEditor;
