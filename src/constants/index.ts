@@ -183,6 +183,7 @@ export interface CodeQuestion {
     javascript: string;
     python: string;
     java: string;
+    // c: string;
   };
   constraints?: string[];
 }
