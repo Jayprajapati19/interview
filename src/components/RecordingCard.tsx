@@ -16,6 +16,7 @@ function RecordingCard({ recording }: { recording: CallRecording }) {
         }
     };
 
+
     const formattedStartTime = recording.start_time
         ? format(new Date(recording.start_time), "MMM d, yyyy, hh:mm a")
         : "Unknown";
@@ -60,6 +61,7 @@ function RecordingCard({ recording }: { recording: CallRecording }) {
                     <PlayIcon className="size-4 mr-2" />
                     Play Recording
                 </Button>
+
                 <Button variant="secondary" onClick={handleCopyLink}>
                     <CopyIcon className="size-4" />
                 </Button>
