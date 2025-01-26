@@ -15,5 +15,6 @@ function SchedulePage() {
 
 
     return <InterviewScheduleUI />;
-}
+};
+
 export default SchedulePage;
