@@ -10,7 +10,6 @@ import { LayoutListIcon, LoaderIcon, UsersIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./ui/resizable";
-
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -19,10 +18,7 @@ import {
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 import EndCallButton from "./EndCallButton";
-// import EndCallButton from "./EndCallButton";
-// import CodeEditor from "./CodeEditor";
-
-
+import CodeEditor from "./CodeEditor";
 
 function MeetingRoom() {
     const router = useRouter();
@@ -99,13 +95,10 @@ function MeetingRoom() {
                 <ResizableHandle withHandle />
 
                 <ResizablePanel defaultSize={65} minSize={25}>
-                    {/* <CodeEditor /> */}
+                    <CodeEditor />
                 </ResizablePanel>
             </ResizablePanelGroup>
         </div>
     );
 }
 export default MeetingRoom;
-
-
-
