@@ -10,8 +10,8 @@ import { Button } from "./ui/button";
 type Interview = Doc<"interviews">;
 
 function MeetingCard({ interview }: { interview: Interview }) {
-    const { joinMeeting } = useMeetingActions();
 
+    const { joinMeeting } = useMeetingActions();
     const status = getMeetingStatus(interview);
     const formattedDate = format(new Date(interview.startTime), "EEEE, MMMM d · h:mm a");
 
@@ -29,6 +29,7 @@ function MeetingCard({ interview }: { interview: Interview }) {
                             status === "live" ? "default" : status === "upcoming" ? "secondary" : "outline"
                         }
                     >
+
                         {status === "live" ? "Live Now" : status === "upcoming" ? "Upcoming" : "Completed"}
                     </Badge>
                 </div>
@@ -53,6 +54,7 @@ function MeetingCard({ interview }: { interview: Interview }) {
                     </Button>
                 )}
             </CardContent>
+
         </Card>
     );
 }

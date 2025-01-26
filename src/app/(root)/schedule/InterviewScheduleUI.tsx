@@ -27,6 +27,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { TIME_SLOTS } from "@/constants";
 import MeetingCard from "@/components/MeetingCard";
 
+
 function InterviewScheduleUI() {
     const client = useStreamVideoClient();
     const { user } = useUser();
@@ -232,6 +233,7 @@ function InterviewScheduleUI() {
 
                             {/* DATE & TIME */}
                             <div className="flex gap-4">
+
                                 {/* CALENDAR */}
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium">Date</label>
@@ -275,7 +277,7 @@ function InterviewScheduleUI() {
                                     {isCreating ? (
                                         <>
                                             <Loader2Icon className="mr-2 size-4 animate-spin" />
-                                            Scheduling...
+                                            Scheduling....
                                         </>
                                     ) : (
                                         "Schedule Interview"
@@ -306,4 +308,6 @@ function InterviewScheduleUI() {
         </div>
     );
 }
+
+
 export default InterviewScheduleUI;

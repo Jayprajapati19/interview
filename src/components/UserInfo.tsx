@@ -17,4 +17,5 @@ function UserInfo({ user }: { user: User }) {
         </div>
     );
 }
+
 export default UserInfo;
