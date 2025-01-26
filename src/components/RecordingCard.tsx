@@ -16,7 +16,6 @@ function RecordingCard({ recording }: { recording: CallRecording }) {
         }
     };
 
-
     const formattedStartTime = recording.start_time
         ? format(new Date(recording.start_time), "MMM d, yyyy, hh:mm a")
         : "Unknown";
