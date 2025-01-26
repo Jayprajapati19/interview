@@ -62,15 +62,18 @@ function MeetingSetup({ onSetupComplete }: { onSetupComplete: () => void }) {
                                     {/* CAM CONTROL */}
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-3">
+
                                             <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                                                 <CameraIcon className="h-5 w-5 text-primary" />
                                             </div>
+
                                             <div>
                                                 <p className="font-medium">Camera</p>
                                                 <p className="text-sm text-muted-foreground">
                                                     {isCameraDisabled ? "Off" : "On"}
                                                 </p>
                                             </div>
+
                                         </div>
                                         <Switch
                                             checked={!isCameraDisabled}

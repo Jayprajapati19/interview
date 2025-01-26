@@ -18,7 +18,6 @@ function MeetingPage() {
 
     if (!isLoaded || isCallLoading) return <LoaderUI />;
 
-
     if (!call) {
         return (
             <div className="h-screen flex items-center justify-center">
